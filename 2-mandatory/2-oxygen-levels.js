@@ -11,7 +11,19 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function findSafeOxygenLevel() {}
+let newArr=[];
+function findSafeOxygenLevel(array) {
+  return array.map(arr =>{
+   let num = arr.substring(0,arr.length-1)
+   if( num>19.5 && num< 23.5){
+    //  return  `${num}%`
+    return newArr.push(`${num}%`)
+   }
+  })
+
+}
+  console.log(findSafeOxygenLevel(["24.2%", "11.3%", "19.9%", "23.1%", "29.3%", "20.2%"]));
+console.log(newArr)
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

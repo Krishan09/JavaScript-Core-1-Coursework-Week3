@@ -3,8 +3,11 @@
   --------------------
 */
 
-var numbers = [3, 2, 1];
-var sortedNumbers; // complete this statement
+// var numbers = [3, 2, 1];
+// var sortedNumbers; // complete this statement
+
+let numbers = [3, 2, 1];
+let sortedNumbers = numbers.sort(); // complete this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE

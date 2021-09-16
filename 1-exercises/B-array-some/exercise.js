@@ -15,6 +15,18 @@ var pairsByIndex = [[0, 3], [1, 2], [2, 1], null, [3, 0]];
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
 
+function isNull(pair) {
+  return pair === null;
+}
+let containsNull = pairsByIndex.some(isNull);
+
+// I tested with and without a null although I'm unsure if this is the approach required.
+if (containsNull) {
+  console.log("process.exit(1)");
+  return "process.exit(1)";
+}
+
+
 var pairs = pairsByIndex.map(function (indexes) {
   var student = students[indexes[0]];
   var mentor = mentors[indexes[1]];

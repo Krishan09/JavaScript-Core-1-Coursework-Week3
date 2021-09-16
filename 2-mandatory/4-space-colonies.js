@@ -15,7 +15,35 @@
   
 */
 
-function getSettlers() {}
+//function getSettlers() {}
+const voyagers = [
+  "Adam family",
+  "Potter family",
+  "Eric",
+  "Aldous",
+  "Button family",
+  "Jude",
+  "Carmichael",
+  "Bunny",
+  "Asimov",
+  "Oscar family",
+  "Avery family",
+  "Archer family",
+  "Just A. family",
+  "A Great family",
+];
+
+function getSettlers(families) {
+  let familiesStaying = families.filter((settler) => {
+    if (settler[0] === "A" && settler.includes("family")) {
+      return settler;
+    }
+  });
+
+  return familiesStaying;
+}
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

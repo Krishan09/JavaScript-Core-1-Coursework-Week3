@@ -16,14 +16,14 @@ Please complete the details below this message
 
 # Your Details
 
-- Your Name:
-- Your City:
-- Your Slack Name:
+- Your Name:Krishan kumar
+- Your City:WM3
+- Your Slack Name:Krrish
 
 # Homework Details
 
-- Module:
-- Week:
+- Module:js1
+- Week:3
 
 # Notes
 
