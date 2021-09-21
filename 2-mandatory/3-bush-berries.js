@@ -21,17 +21,17 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function isSafe(berryArray) {
-  const safeMessage = "Bush is safe to eat from";
-  const warningMessage = "Toxic! Leave bush alone!";
-
-  const isSafeToEat = berryArray.every(function (berry) {
-    return berry === "pink";
-  });
-
-  return isSafeToEat ? safeMessage : warningMessage;
+function isBushSafe(berryArray) {
+  //Write your code here
 }
 
+    if (berryArray.every((berry) => berry === "pink")) {
+      return "Bush is safe to eat from";
+    }
+
+    return "Toxic! Leave bush alone!";
+  }
+  
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 test("isBushSafe finds toxic busy", () => {
@@ -39,7 +39,6 @@ test("isBushSafe finds toxic busy", () => {
     isBushSafe(["pink", "pink", "pink", "neon", "pink", "transparent"])
   ).toEqual("Toxic! Leave bush alone!");
 });
-
 test("isBushSafe function finds safe bush", () => {
   expect(isBushSafe(["pink", "pink", "pink", "pink"])).toEqual(
     "Bush is safe to eat from"
