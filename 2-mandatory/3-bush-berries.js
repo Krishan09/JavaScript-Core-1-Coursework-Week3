@@ -21,7 +21,7 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function isBushSafe(berryArray) {
+function isSafe(berryArray) {
   const safeMessage = "Bush is safe to eat from";
   const warningMessage = "Toxic! Leave bush alone!";
 
